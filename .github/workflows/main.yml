@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Have GitHub actions build the project
-        run: mvn -B package --file pom.xml
+        run: mvn clean install test --file pom.xml
         
       - name: List the current directory
         run: ls -a
